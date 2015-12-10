@@ -8,12 +8,10 @@ require 'resque/scheduler'
 require 'resque/scheduler/server'
 require 'yaml'
 
-# Resque.redis = Redis.new
-# Or, with custom options
 Resque.redis = Redis.new({
-  :host => "127.0.0.1",
-  :port => 6379,
-  :db => 0
+  :host => ENV["REDIS_HOST"] || "127.0.0.1",
+  :port => ENV["REDIS_PORT"] || 6379,
+  :db => ENV["REDIS_DB"] || 0
 })
 
 run Rack::URLMap.new "/" => Resque::Server.new
