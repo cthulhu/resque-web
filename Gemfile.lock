@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/Shop2market/resque-lock.git
-  revision: aaec2572a890006870f3341ba3690e952047b88d
+  revision: 8b72f4f87dd0e94118995a1fa18f581c54d72ff6
   specs:
     resque-lock (0.0.1)
       resque
