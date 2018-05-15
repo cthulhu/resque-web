@@ -1,5 +1,5 @@
 # Use the barebones version of Ruby
-FROM ruby:2.2
+FROM ruby:2.5
 
 MAINTAINER Stanislav Pogrebnyak <stan@adcurve.com>
 
