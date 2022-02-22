@@ -14,4 +14,6 @@ Resque.redis = Redis.new({
   :db => ENV["REDIS_DB"] || 0
 })
 
-run Rack::URLMap.new "/" => Resque::Server.new
+map "/" do
+  run Resque::Server.new
+end
