@@ -12,8 +12,11 @@ bundle exec rackup
 ```
 
 Docker:
+
+```bash
 docker build . -t resque-web
 docker run -it -p 9292:9292 -t resque-web
+```
 
 ## Usage
 
